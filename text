@@ -1,18 +1,17 @@
-<!doctype html>
-<html lang="de">
- <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>External Captive Portal with Username</title>
- </head>
- <body>
- <form method="POST" action="https://securelogin.arubanetworks.com/swarm.cgi">
- <input type="hidden" name="cmd" value="authenticate" />
- User Name: <br/> <input type="text" name="user" id="user"/>
- <br/>
- Password: <br/> <input type="password" name="password" id="password"/>
- <br/>
- <input type="submit" value="Login"/>
- </form>
- </body>
-</html>
+<HTML>
+<HEAD>
+External Captive Portal Page <meta http-equiv="Content-Type" content="text/html; charset=GB2312"/>
+</HEAD>
+<BODY>
+<form method=POST action="http://securelogin.arubanetworks.com/cgi-bin/login">
+Username: <input name=user value="">
+Password: <input name=password value="">
+<input name=cmd value="authenticate" type="hidden">
+<input name=mac value="" type="hidden">
+<input name=ip value="" type="hidden">
+<input name=essid value="" type="hidden">
+<input name=url value="http://www.google.com" type="hidden">
+<BR><input type="submit" name="Login" value="login" class="button" />
+</form>
+</BODY>
+</HTML>
